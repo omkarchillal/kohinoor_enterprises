@@ -1,0 +1,54 @@
+/* Background Image */
+.bg-image {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.section-heading {
+  font-weight: bold;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* battery description page */
+
+.battery-detail-card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.battery-card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.battery-card-image:hover {
+  filter: brightness(70%);
+}
+
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
