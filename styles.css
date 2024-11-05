@@ -66,6 +66,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   margin: 0 10px;
+  min-height: 160px;
 }
 
 .contact_div h4 {
@@ -90,4 +91,16 @@
     width: 400px;
     position: fixed;
   }
+}
+
+@media (max-width: 768px) {
+  .contact_info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_div {
+    width: 100%;
+    margin: 10px 0;
+}
 }
