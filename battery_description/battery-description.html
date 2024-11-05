@@ -31,21 +31,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="/kohinoor.html">Home</a>
+              <a class="nav-link" href="../index.html">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#dashboard">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link" href="../index.html">Contact Us</a>
             </li>
           </ul>
-          <form class="d-flex ms-3" role="search">
+          <form class="d-flex ms-3" role="search" onsubmit="searchBatteries(event)">
             <input
               class="form-control me-2"
               type="search"
+              id="searchBar"
               placeholder="Search"
+              oninput="showSuggestions()"
               aria-label="Search"
             />
             <button class="btn btn-outline-light" type="submit">Search</button>
@@ -118,7 +118,7 @@
               <h3>Sold Out!</h3>
               <hr />
               This battery is currently sold out. But there's a lot more to
-              <a href="/index.html" style="color: orange !important"
+              <a href="../all_batteries.html" style="color: orange !important"
                 >explore.</a
               >
             </div>
